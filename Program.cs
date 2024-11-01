@@ -1,12 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-using FactoryMethod;
-
-Console.WriteLine("Hello, World!");
+﻿using FactoryMethod.Factory;
 
 //var mailSender = new EmailMailSender("Rasheed", "A  content");
 //mailSender.SendMail();
 
 MailManager mailManager = new EmaiMailManager();
+<<<<<<< HEAD
 MailManager SMSManager = new SMSMailManager();
 
 List<Person> people = new List<Person>();
@@ -39,3 +37,8 @@ for (int i = 0; i < 30; i++)
 
 mailManager.SendMails(people);
 SMSManager.SendMails(people);
+=======
+MailManager sms = new EmaiMailManager();
+var people = FakeDatabase.FillDataBase();
+MailManager.SendMails(people);
+>>>>>>> 543d4c98a1cffeac1116343d2e1582db16edf7d7
