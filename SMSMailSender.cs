@@ -18,7 +18,7 @@ namespace FactoryMethod
 
         public void SendMail()
         {
-            Console.WriteLine($"Sending Mail To  ${Identifier} Content is : ${Content}");
+            Console.WriteLine($"Sending Mail To  ${Identifier}  using {{SMS}} Content is : ${Content}");
         }
     }
 }

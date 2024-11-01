@@ -7,7 +7,7 @@ Console.WriteLine("Hello, World!");
 //mailSender.SendMail();
 
 MailManager mailManager = new EmaiMailManager();
-MailManager SMS = new EmaiMailManager();
+MailManager SMSManager = new SMSMailManager();
 
 List<Person> people = new List<Person>();
 
@@ -38,3 +38,4 @@ for (int i = 0; i < 30; i++)
 }
 
 mailManager.SendMails(people);
+SMSManager.SendMails(people);

@@ -20,7 +20,7 @@ namespace FactoryMethod
         private void SendSingleMail(Person person)
         {
             var mailServiceType = DetectMailingTypeByIdentifier(person.Idenifier);
-            var mailService = CreateMailService(mailServiceType, person.Idenifier, "The Content Of The Message That site want to send ");
+            var mailService = CreateMailService(person.Idenifier, "The Content Of The Message That site want to send ");
             mailService.SendMail();
         }
 
