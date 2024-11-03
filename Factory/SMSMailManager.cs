@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FactoryMethod
+namespace FactoryMethod.Factory
 {
     public class SMSMailManager : MailManager
     {
@@ -12,6 +12,5 @@ namespace FactoryMethod
         {
             return new SMSMailSender(identifier, content);
         }
-
     }
 }
