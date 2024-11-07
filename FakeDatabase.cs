@@ -1,6 +1,6 @@
 ﻿using FactoryMethod.Factory;
 
-static class FakeDatabase
+internal static class FakeDatabase
 {
     public static List<Person> FillDataBase()
     {
@@ -13,20 +13,6 @@ static class FakeDatabase
             decimal payPerHour = 25.0M;
 
             people.Add(new Teacher(name, identifier, password, payPerHour));
-            people.Add(new Teacher(name, identifier, password, payPerHour));
-            people.Add(new Teacher(name, identifier, password, payPerHour));
-            people.Add(new Teacher(name, identifier, password, payPerHour));
-            people.Add(new Teacher(name, identifier, password, payPerHour));
-            people.Add(new Teacher(name, identifier, password, payPerHour));
-            people.Add(new Teacher(name, identifier, password, payPerHour));
-            people.Add(new Coach(name, identifier, password, payPerHour));
-            people.Add(new Coach(name, identifier, password, payPerHour));
-            people.Add(new Coach(name, identifier, password, payPerHour));
-            people.Add(new Coach(name, identifier, password, payPerHour));
-            people.Add(new Coach(name, identifier, password, payPerHour));
-            people.Add(new Coach(name, identifier, password, payPerHour));
-            people.Add(new Coach(name, identifier, password, payPerHour));
-            people.Add(new Coach(name, identifier, password, payPerHour));
             people.Add(new Coach(name, identifier, password, payPerHour));
         }
         return people;

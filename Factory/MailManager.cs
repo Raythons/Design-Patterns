@@ -6,13 +6,13 @@ namespace FactoryMethod.Factory
     {
         public MailManager() { }
 
-        public  void SendMails(IEnumerable<Person> people)
+        public void SendMails(IEnumerable<Person> people)
         {
             foreach (Person person in people)
                 SendSingleMail(person);
         }
 
-        private  void SendSingleMail(Person person)
+        private void SendSingleMail(Person person)
         {
             //var mailServiceType = DetectMailingTypeByIdentifier(person.Idenifier);
             var mailService = CreateMailService(person.Idenifier, "The Content Of The Message That site want to send ");
@@ -21,7 +21,7 @@ namespace FactoryMethod.Factory
         }
         public abstract IMailService CreateMailService(string identifier, string content);
 
-        public  EnMailType DetectMailingTypeByIdentifier(string identifier)
+        public static EnMailType DetectMailingTypeByIdentifier(string identifier)
         {
             string emailPattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
 

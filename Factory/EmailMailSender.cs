@@ -14,7 +14,7 @@
         public void SendMail()
         {
             //  Setting the
-            Console.WriteLine($"Sending Mail via {{{"EMAIL"}}} To  ${Identifier} Content is : ${Content}");
+            Console.WriteLine($"Sending Mail via {{{"EMAIL"}}} To  {Identifier} Content is : {Content}");
         }
     }
 }
