@@ -1,6 +1,6 @@
 ﻿namespace FactoryMethod.Factory
 {
-    public class EmailMailManager : MailManager
+    public class EmaiMailManager : MailManager
     {
         public override IMailService CreateMailService(string identifier, string content)
         {
